@@ -1,16 +1,17 @@
 # @author Rick Osborne
 
-## Put comments here that give an overall description of what your
-## functions do
+# These functions implement wrappers around a matrix that
+# provide a cache layer for inversion.
 
-## Write a short comment describing this function
+# Constructor: use this method to create a new caching matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
 
 }
 
-
-## Write a short comment describing this function
+# Solver: Instead of using `inverse`, use this function to solve
+#  for the inverse of the matrix.  The result will be cached and
+#  subsequent calls will return the result much faster.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
